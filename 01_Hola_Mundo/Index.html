@@ -1,10 +1,37 @@
 <!DOCTYPE html>
+<!-- La cabezera de la pagina web-->
 <html lang="es">
     <head>
+        <!-- Indica el idioma-->
         <meta charset="UTF-8">
+        <!-- Importante para optimizacion de google en las busquedas -->
+        <meta name="description" content="Pagina Web HTML/CSS">
+        <!-- Palabras clave con que identifico mi sitio web (no se usa)-->
+        <meta name="keywords" content="HTML, CSS, Web Development">
+        <!-- El tamaño que quiero que tenga la ventana de navegacion
+            toman como ancho el ancho del dispositivo (device-width) y la escala a la suya-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Solo vale para dispositivos de Microsoft, que los dispositivos explorer trabajen 
+            como si fuera edge o el mas moderno. Apenas tiene importancia, la puedes queitar-->
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- Es el titulo de la pestaña. Importante: Usan los buscadores para indexar-->
         <title>Hola Mundo</title>
+        <!-- Donde el icono es .ico y del tipo x-icon (puede ser png (image/png)), pone el icono al lado de la pestaña-->
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <!-- Se elige el estilo (CSS) de momento se cambia el color del h1.
+             Se aplican uno detras de otro-->
+        <style>
+            h1 {color:maroon}
+        </style>
+        <!-- Para enlazar el CSS -->
+        <link rel="stylesheet" href="./css/styles.css">
+        <!-- Introducir javascript, el mensaje aparece en la consola del navegador-->
+        <script>
+            console.log("Esto es un hola mundo")
+        </script>
+        <!-- Linkar el fichero js -->
+        <script src="./js/app.js">
+        </script>
     </head>
     <body>
         <h1>Hola Mundo</h1>
