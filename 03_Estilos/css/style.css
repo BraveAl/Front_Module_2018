@@ -1,0 +1,28 @@
+/* Importar otra css*/
+@import "extras.css";
+/*
+Especificidad:
+
+a - in Line 
+b - id
+c - class u otros atributos
+d - etiquetas
+
+a.b.c.d
+
+*/
+
+
+/* Selector mediante un id: NO SUELEN USARSE
+Especificidad: 0.1.0.0*/
+/* #p1{color: chocolate} */
+
+/* Selector mediante etiqueta (p, div...)
+Especificidad: 0.0.0.1*/
+p{color: cadetblue}
+
+/* Selector mediante clases, la mejor opcion: MAS IMPORTANTES
+Especificidad: 0.0.1.0*/
+.p1{color: brown}
+/*p.p1.p1{color: brown} /* Combinando le gano especificidad 0.0.1.1; ganar mas p.p1.p1 0.0.2.1*/
+/*p.p2{color: blue}*/

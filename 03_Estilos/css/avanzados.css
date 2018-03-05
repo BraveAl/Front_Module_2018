@@ -1,0 +1,65 @@
+
+/* Selector de descendientes " " */
+footer p {
+    color: forestgreen;
+}
+
+/* Hover desde el padre al parrafo de la clase derechos*/
+footer:hover p.derechos {
+    font-size: 3rem;
+}
+
+/* Tamnbien puedes poner clases .p1*/
+/* poniendo el hover, se activa el color al pasar el raton por encima del parrafo*/
+article .p2:hover {
+    color: dodgerblue;
+}
+
+/* Pseudoelemento para modificar la primera letra*/
+article .p2+p::first-letter {
+    font-size: 2rem;
+    font-family: fantasy;
+}
+
+/* Pseudoelemento para modificar la primera linea*/
+article .p2+p::first-line{
+    font-weight: bold;
+}
+/* Selector de hijo ">" */
+/* No haria nada porque main no tiene hijos, sus hijos son article*/
+/* main>p {
+    color: dodgerblue;
+} */
+
+/*Selector de atributo [name], mas especifico [name = "lorem"]*/
+[name="Lorem"] {
+    color: gold;
+}
+
+/*Mejor con .p1*/
+[class="p1"]{color: maroon}
+
+/* Genera contenido antes y despues de la etiqueta que digamos*/
+section::before {
+    content: "Empieza lo bueno";
+    color: salmon;
+}
+
+section::after{
+    content: "Termina lo bueno";
+    color:salmon;
+}
+
+/* Contador de lineas, primero se resetea y luego se incrementan*/
+
+section{
+    counter-reset: section;
+}
+
+section p::before {
+    counter-increment: section;
+    content: counter(section) ". ";
+}
+
+
+
