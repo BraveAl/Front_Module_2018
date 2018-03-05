@@ -59,6 +59,7 @@ section{
 section p::before {
     counter-increment: section;
     content: counter(section) ". ";
+    /*content: counter(section) ". " url(../image/favicon.png);*/
 }
 
 
