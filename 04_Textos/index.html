@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Textos</title>
+
+    <!-- Rodeo con comillas el quote en css -->
+    <!-- Poner estilo de comillas -->
+    <style>
+
+         
+        /*Pone el tipo de comillas*/
+        blockquote{
+            quotes: '\00AB' '\00BB';
+        }
+        
+        blockquote::before {
+            content: open-quote
+        }
+
+        blockquote::after {
+            content: close-quote
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Etiqueta menu, puede ir dentro de nav o no. El nav con una lista ya es un menu -->
+    <nav>
+        <menu>
+            <menuitem>Item 1</menuitem>
+            <menuitem>Item 2</menuitem>
+            <menuitem>Item 3</menuitem>
+            <menuitem>Item 4</menuitem>
+            <menuitem>Item 5</menuitem>
+        </menu>
+    </nav>
+    
+    
+    <details>
+        <summary>
+            Configuración
+        </summary>    
+            <p>El casco urbano antiguo está recostado en la margen derecha del río Tajo, en una colina de cien metros de
+            altura sobre el mismo, el cual la ciñe por su base, formando un pronunciado meandro conocido como torno
+            del Tajo. El punto que este meandro no cierra es la única entrada natural con que cuenta la ciudad, sobre
+            la que se construyeron las carreteras que enlazan la ciudad con Madrid y Ávila.</p>
+    </details>
+
+    <!-- Añadir citas -->
+    <p>Vemos <q cite="Etiqueta para el pc">muchas</q> cosas <cite>El señor de los anillos</cite></p>
+     <!-- Con atributo solo lo veeria la maquina -->
+     <!-- Para que lo vean las personas se pone cite-->  
+     <!-- Con el atributo title sale un popup donde aparece el titulo-->  
+    <blockquote cite="El señor de los anillos" title="El señor de los anillos">        
+        Lorem ipsum dolor sit amet consectetur (<abbr title="Instituto Nacional de Estadistica">INE</abbr>)  adipisicing elit.  Voluptatibus odio eum expedita, esse consectetur nobis in, et maxime ipsam laborum ullam officia quae ipsa! Porro tempora qui natus quibusdam minima?
+        (<cite>El señor de los anillos</cite>)
+    </blockquote>
+    <hr>
+    <!-- Haces referencia a un codigo, como son etiquetas linea se ve todo seguido -->
+    <p>En Javascript se pondria code</p>
+
+    <pre>
+        <code>var = 25 +9;
+              var = 25;
+        </code> 
+    </pre>
+    
+    <sample> var = 25 +9</sample>      
+    <kbd>var = 25 +9</kbd>
+
+        
+</body>
+</html>
