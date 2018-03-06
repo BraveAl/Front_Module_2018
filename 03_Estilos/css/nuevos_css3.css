@@ -1,0 +1,74 @@
+/* Afecta a varios elementos html dependiendo de la posicion en lugar de usar las clases*/
+/* Cuentame los hijos y cogeme el segundo parrafo dentro del article, cuenta hijos, no parrafos que sean hijos*/
+
+/* article p:nth-child(2) {
+    color: brown;
+}
+ */
+/* Coge los segundos hijos de cada estructura que sea parrafo se pone azul*/
+
+/* p:nth-child(2){
+    color: blue;
+} */
+
+/* Solo se cuentan los hijos del tipo indicado, todos los parrafos que sean el segundo parrafo en la lista de hijos se pongan marron*/
+
+/* p:nth-of-type(2)
+{
+    color: blueviolet;
+} */
+
+/* El ultimo hijo, antepenultimo...*/
+/* p:nth-last-child(2){
+    color: red;
+} */
+
+/* Ultimo, para el primero seria first-child, first-of-type afecta a todos los elementos no solo a parrafos*/
+/* p:last-child{
+    color: peru;
+} */
+
+/* Al heredarse tiene el mismo efecto que poner un "*" solo en lugar de body, border no se hereda*/
+/* Aqui solo se pone el borde al body, si pongo "*" se lo pone a todo, da igual si bloque o linea o todo*/
+
+/* *{
+    color: olive;
+    border: 1px solid;  
+} */
+
+/* body{
+    color: olive;
+    border: 1px solid;
+} */
+
+/* Todo menos lo que te diga lo pones en azul, hay un bug y primero hay que pintar todo de un color "*" y luego aplicar esto*/
+/* *:not(p){
+    color: navy;
+} */
+
+/* Pone borde a todos menos los primeros de su tipo*/
+/* p:not(:first-of-type){
+    border: 1px solid;
+}
+ */
+
+/* En root escribimos variables con --variable */
+
+:root{
+    --color-base: salmon;
+    --color-texto: yellow;
+}
+
+*{
+    color: black;
+}
+
+*:not(p){
+    color: var(--color-texto);
+}
+
+
+
+
+
+
