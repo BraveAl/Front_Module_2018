@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Static</title>
+</head>
+
+<style>
+    /* Resetearlo siempre para controlar los espacios*/
+    *{box-sizing: border-box}
+
+    p{
+        background-color: salmon;
+        /* Hay que aplicar margenes a cada uno de los textos*/
+        width: 20%;
+
+        padding: 1rem;
+        /* Al poner float se pueden poner unos a continuacion de otros*/
+        float: left;
+    }
+
+    /* Quitamos el margen del texto de la derecha (del ultimo de este tipo): De todos los elementos de este tipo menos al ultimo le doy margen*/
+    p:not(:last-of-type){
+        margin-right: 6.66%;
+    }
+
+
+    .wrapper {
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+        /* Un contenedor con todos los hijos flotando se colapsa y tiene altura 0, de ahi que no salga el borde */
+        border: .1rem solid;
+        /* Solucionar el problema anterior*/
+        /* overflow: hidden; */
+    }
+
+    /* Otra forma de solucionar el problema anterior*/
+    .wrapper::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+
+</style>
+
+
+<body>
+    <div class="wrapper">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, dolor mollitia fuga totam impedit cumque officia tempora quas, consectetur asperiores nulla perferendis dolore eum animi, neque facere ipsa reiciendis vitae?</p>
+    <p>Sapiente ipsam, repellendus voluptatem, molestias quasi voluptas labore porro inventore cum nesciunt aliquid laudantium ad perspiciatis, illo neque quaerat excepturi aut blanditiis? Dicta sit perferendis sunt delectus aut amet cum.</p>
+    <p>Atque nobis numquam voluptate cum veniam odio doloremque repellat eos, doloribus, nostrum officiis earum labore assumenda perspiciatis ullam corrupti? In molestiae porro incidunt veniam cum ad eaque minus officia sed.</p>
+    <p>Expedita nulla inventore excepturi ipsam illo aut accusamus, placeat deleniti facere minima eaque. Tempore perferendis architecto dolore, tempora veritatis itaque quod incidunt omnis corrupti, perspiciatis sint obcaecati. Velit, voluptates ipsam.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Centrado</title>
+</head>
+<style>
+    /* Pintamos un borde*/
+    h1{
+        font-size: 5rem;
+        border: .1rem solid maroon;
+        /* Alinear texto en el bloque*/
+        text-align: center;
+        /* Poner sombras al titulo*/
+        text-shadow: .1rem .1rem .2rem gray;
+        /* Sirve para redondear los bordes, se pueden poner diferentes a cada lado (puedes poner hasta cuatro valores) 1rem 2 rem 4 rem 3 rem / 3rem 1rem 2rem 4 rem
+        (das dos valores a cada una de las esquinas)*/
+        border-radius: 1rem;
+    }
+
+    /* Damos ancho al texto y le damos margen por la izquierda y la derecha de forma automatica reparten el margen*/
+    /* Con el ancho y los bordes puedes ir jugando hasta obtener las formas que necesites*/
+    p{
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        border: 1px solid lightgrey;
+        /* Hay que poner padding para que el borde no quede pegado a las letras, en este caso izquierda y abajo */
+        padding: 2rem 3rem;
+        /* Sombra hacia abajo, con el - delante inviertes los ejes, va por etapa, segun metes se va difuminando la sombra*/
+        box-shadow: .5rem .5rem .5rem .5rem;
+        border-radius: 5rem;
+
+    }
+
+    
+
+
+</style>
+<body>
+    <h1>Ejemplo de centrado</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti temporibus quo ullam architecto placeat fugiat atque tenetur rerum necessitatibus et nostrum quia laborum quibusdam possimus aliquam suscipit quam, impedit labore?</p>
+</body>
+</html>

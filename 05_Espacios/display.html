@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Display</title>
+    <style>
+        /* Con esto me quedan los textos como los he escrito, usando display*/
+        span {
+            /* Tienes la opcion de inline-block que nos ponen los elementos uno a llado del otro (un gridlayout)*/
+            /* display: inline-block;*/
+            display: block;
+            /* Son añadidos al ejemplo, para ver que son bloques que ocupan todo el espacio y les puedes poner las propiedades del bloque */
+            border: .1rem solid;
+            width: 20rem;
+            margin: 1rem;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso del display</h1>
+    <p>
+        <!-- Se ve todo seguido a menos que cambie el display -->
+        <span>Lorem ipsum dolor sit amet </span>
+        <span>consectetur adipisicing elit. </span>
+        <span>Ipsa minus culpa vero modi possimus </span>
+        <span>amet commodi libero ab debitis,</span>
+        <span>sint molestiae deserunt ex quos itaque? </span>
+        <span>Quibusdam vel ut corrupti nisi.</span>
+    </p>
+</body>
+</html>
