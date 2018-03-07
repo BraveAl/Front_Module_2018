@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tablas</title>
+    <style>
+        table.t1 th {
+            padding: 2rem;
+        }
+
+        table.t1 td{
+            text-align: center;
+            padding-right: 1rem;
+        }
+
+        table.t1 th,td{
+            border: .1rem solid;
+        }
+
+        table.t1{
+            /* Junta los bordes*/
+            border-collapse: collapse;
+        }
+        
+        /* Se separan las cajas de la tabla*/
+        table.t1:hover {
+            border-collapse: separate;
+            border-spacing: .7rem;
+        }
+        
+        table.t2 td,
+        table.t2 th {
+            padding: 3rem;
+            border: .1rem solid;
+        }
+        /* APlica color a las celdas impares*/
+        table.t2 td:nth-of-type(odd){
+            background-color: salmon;
+        }
+
+        table.t2 td:nth-of-type(even){
+            background-color: gray;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Tablas en HTML</h1>
+    <!-- Contruimos tablas para tabular datos, se puede usar el atributo de borde o biuen en CSS -->
+    <table class="t1">
+        <!-- Filas -->
+        <tr>
+            <!-- Columnas -->
+            <th></th>
+            <!-- Las cabeceras de las tablas se ponen con th, por eso cambiamos las td por th -->
+            <th>Examen 1</th>
+            <th>Examen 2</th>
+            <th>Examen 3</th>
+        </tr>
+        <tr>
+            <!-- Columnas -->
+            <th>Alumno 1</th>
+            <td>3</td>
+            <td>4</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <!-- Columnas -->
+            <th>Alumno 2</th>
+            <td>3</td>
+            <td>6</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <!-- Columnas -->
+            <th>Alumno 3</th>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+    </table>
+        <hr>
+
+    <table class="t2">
+        
+        <tr>
+                <!-- Columnas -->
+                <th></th>
+                <th></th>
+                <!-- Las cabeceras de las tablas se ponen con th, por eso cambiamos las td por th -->
+                <th scope="col">Examen 1</th>
+                <th scope="col">Examen 2</th>
+                <th scope="col">Examen 3</th>
+            </tr>
+            <tr>
+                <!-- Columnas -->
+                <th rowspan="2" scope="rowgroup">Alumno 1</th>
+                <th scope="row">Teoria</th>
+                <td>3</td>
+                <td>4</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <!-- Columnas -->
+                
+                <th scope="row">Practica</th>
+                <td>3</td>
+                <td>6</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <!-- Columnas -->
+                <th rowspan="2" scope="rowgroup">Alumno 2</th>
+                <th scope="row">Teoria</th>
+                <td>3</td>
+                <td>6</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <!-- Columnas -->
+                
+                <th scope="row">Practica</th>
+                <td>3</td>
+                <td>4</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <!-- Columnas -->
+                <th rowspan="2" scope="rowgroup">Alumno 3</th>
+                <th scope="row">Teoria</th>
+                <td>3</td>
+                <td>6</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <!-- Columnas -->
+                
+                <th scope="row">Practica</th>
+                <td>3</td>
+                <td>6</td>
+                <td>0</td>
+            </tr>
+    </table>
+</body>
+</html>
