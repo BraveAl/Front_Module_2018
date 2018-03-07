@@ -2,22 +2,54 @@
 
 /* Importante poner esta parte al principio, el reseteo*/
 
-/* *, 
+*, 
 *::before, *::after, 
 *:before, *:after { 
 box-sizing : border-box;
-} */
+}
 
+/* Distribucion elastica del container, para que pierda la elasticidad se pone un max-width:1080px y min-width: 480px por ejemplo*/
+.wrapper {
+    width: 90%;
+    max-width: 1080px;
+    min-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-align: center;
+    /* font-family: 'Bangers', cursive; */
+}
 
 header p{
     color: brown;
     font-size: 1.5rem;
     font-weight: bold;
+    font-family: 'Open Sans Condensed', sans-serif;
+    
 }
 
-footer p {
-    color: gray;
+body {
+    font-family: 'Open Sans Condensed', sans-serif;
 }
+
+h2{
+    color: brown;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+footer {
+    color: gray;
+    text-align: center;
+}
+
 
 /* Pone los enlaces dentro de aside de ese color*/
 aside a:link{
@@ -28,3 +60,11 @@ aside a:link{
 aside a:visited{
     color: red;
 }
+
+p{
+    text-align: justify;
+}
+
+
+
+
