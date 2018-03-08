@@ -22,6 +22,19 @@ box-sizing : border-box;
     
 }
 
+figure{
+    float: left;
+    width: 50%;
+    padding:0;
+    margin:0;
+    padding-right: .7rem;
+    text-align: center;
+}
+
+img{
+    width: 100%;
+}
+
 h1 {
     font-size: 3rem;
     font-family: 'Open Sans Condensed', sans-serif;
@@ -51,11 +64,20 @@ body {
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
-h2, h3{
+h2{
     color: brown;
     font-size: 1.5rem;
     font-weight: bold;
     font-family: 'Open Sans Condensed', sans-serif;
+    
+}
+
+h3{
+    color: brown;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin-bottom: .1rem;
 }
 
 footer {
@@ -63,16 +85,18 @@ footer {
     text-align: center;
 }
 
-aside{
+.asidetab{
     /* Movemos el aside a la derecha o a la izquierda*/
-    border-bottom: .1rem solid;
-    border-top: .1rem solid;
-    padding: .2rem;
+    /* border-bottom: .1rem solid;
+    border-top: .1rem solid; */
+    padding: .1rem;
     width: 40%;
     margin-left: 1rem;
     margin-right: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: .4rem;
+    margin-top: 3rem;
     float: right;
+    text-align: center;
 }
 
 /* Pone los enlaces dentro de aside de ese color*/
@@ -90,7 +114,7 @@ p{
 }
 
 table.t1 th {
-    padding: .2rem;
+    padding: .1rem;
 }
 
 table.t1 td{
@@ -100,11 +124,14 @@ table.t1 td{
 
 table.t1 th,td{
     border: .1rem solid;
+    font-size: .9rem;
 }
 
 table.t1{
     /* Junta los bordes*/
     border-collapse: collapse;
 }
+
+
 
 
