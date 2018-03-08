@@ -16,7 +16,10 @@ box-sizing : border-box;
     margin-left: auto;
     margin-right: auto;
     margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 2rem; 
+    padding: 2rem 1rem;
+    background: linear-gradient(to right, rgba(158,183,219,1) 0%, rgba(133,162,207,1) 38%, rgba(113,145,197,1) 69%, rgba(93,128,187,1) 100%);
+    
 }
 
 h1 {
@@ -31,14 +34,24 @@ header p{
     font-size: 1.5rem;
     font-weight: bold;
     font-family: 'Open Sans Condensed', sans-serif;
+    text-align: center;
     
+}
+
+.bother{
+    clear: left;
+}
+
+header {
+    border: 2px solid;
+    padding: .1rem;
 }
 
 body {
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
-h2{
+h2, h3{
     color: brown;
     font-size: 1.5rem;
     font-weight: bold;
@@ -50,6 +63,17 @@ footer {
     text-align: center;
 }
 
+aside{
+    /* Movemos el aside a la derecha o a la izquierda*/
+    border-bottom: .1rem solid;
+    border-top: .1rem solid;
+    padding: .2rem;
+    width: 40%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    float: right;
+}
 
 /* Pone los enlaces dentro de aside de ese color*/
 aside a:link{
@@ -65,6 +89,22 @@ p{
     text-align: justify;
 }
 
+table.t1 th {
+    padding: .2rem;
+}
 
+table.t1 td{
+    text-align: center;
+    padding-right: .1rem;
+}
+
+table.t1 th,td{
+    border: .1rem solid;
+}
+
+table.t1{
+    /* Junta los bordes*/
+    border-collapse: collapse;
+}
 
 
