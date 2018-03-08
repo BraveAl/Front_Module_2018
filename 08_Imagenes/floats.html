@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Float con Imagenes</title>
+    <style>
+        /* img{
+            float: left;
+            padding-right: 2rem;
+        } */
+
+        figure{
+            /* Esto para que se comporte como una imagen sin los valores por defectos*/
+            margin: 0;
+            padding: 0;
+            /* Hasta aqui lo anterior*/
+            float: left;
+            padding-right: 2rem;
+            /* Para que la imagen se reduzca a la vez que el texto, pero se solapa porque se hace figure al 50%*/
+            width: 50%;
+        }
+
+        img{
+            /* Regulo el tamaño de la imagen no del contenedor, asi se mantiene la proporcion jugando con el width del figure y del img*/
+            width: 100%;
+
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Mejor para poner imagenes se usa el figure-->
+    <figure>
+        <img src="http://lorempixel.com/800/450/nature/" alt="imagen">
+        <figcaption>Imagen natural</figcaption>
+    </figure>
+    
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, nulla temporibus distinctio esse velit aliquid quia non iusto, ipsa magnam obcaecati facilis rerum! Optio, ex veritatis temporibus dolorum ipsa suscipit?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae facere velit repudiandae reprehenderit blanditiis tenetur accusantium, quo doloribus architecto harum at maxime quos ipsa deleniti! Temporibus, numquam nam. Officiis, reprehenderit?</p>
+    <p>Earum omnis magni neque vel accusantium molestias, possimus sit mollitia numquam qui porro consequatur quae quidem eum distinctio unde fuga necessitatibus, ab quisquam! Sapiente delectus molestiae deleniti. Harum, molestias ipsam!</p>
+    <p>Error vel quasi aspernatur, assumenda ab deleniti a dolorem quisquam alias debitis voluptates ullam optio voluptas nemo nisi quo iste repudiandae neque incidunt nihil sint. Quos sed error a at?</p>
+    <p>Ad doloribus deleniti quidem possimus consectetur quisquam neque similique officia deserunt ipsum nemo, minus fugit hic aliquam. Commodi facere maiores ullam rem non iure error, dolorem, atque dicta animi architecto.</p>
+    <p>Optio sit eligendi repudiandae similique placeat recusandae! Unde, temporibus delectus at ut quisquam maxime rerum obcaecati illum aut omnis, ipsum voluptatem quasi, sit labore. Facere fugit corrupti soluta dignissimos odit.</p>
+    <p>Necessitatibus impedit eius neque vel, possimus ea quas nostrum? Adipisci tenetur illum praesentium sunt recusandae ut accusantium earum ad tempore iure labore doloremque laboriosam minus aliquid ipsum, quos obcaecati eligendi.</p>    
+</body>
+</html>
