@@ -22,13 +22,21 @@ box-sizing : border-box;
     
 }
 
-figure{
+.figufoto{
     float: left;
     width: 50%;
     padding:0;
     margin:0;
     padding-right: .7rem;
     text-align: center;
+}
+
+.figuvideo{
+    width: 50%;
+}
+
+video {
+    width: 100%;
 }
 
 img{
