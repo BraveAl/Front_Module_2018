@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Imagenes como Titulos</title>
+    <style>
+        header{
+            height: 12rem;
+            background-image: url(./images/Netflix.PNG);
+            background-repeat: no-repeat;
+        }
+    
+
+        /* Lo que hago es ocultar el titulo para personas pero no para el indexador*/
+        h1 span{
+            display: none;
+        }
+        
+        iframe{
+            width: 80%;
+            height: 50vh;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Se pone el span para ocultarlo y el indexador si lo vea -->
+        <h1><span>Netflix</span></h1>
+    </header>
+    <main>
+        <p>La web original</p>
+        <!-- Con esto creo abro otra pagina web dentro de una pagina web -->
+        <iframe src="http://www.tajamar.es/" frameborder="0"></iframe>
+    </main>
+    
+</body>
+</html>
