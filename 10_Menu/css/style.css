@@ -1,0 +1,126 @@
+*,
+*::after, *::before,
+*:after, *:before{
+    box-sizing: border-box;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/**************************/
+/* Comun a todos los menus*/
+/**************************/
+
+main{
+    min-height: 80vh;
+}
+
+nav a{
+    /* Quito el color, con unset le digo que herede el color de su padre*/
+    text-decoration: none;
+    color: unset;
+ 
+}
+
+/* nav a{
+     /* Incrementamos la superficie de ataque para poder clickar*/
+ /*   padding: 3rem;
+} */
+
+nav ul{
+    /* Quitamos los puntos de la lista*/
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav{
+    /* Para que no se me peguen los menus*/
+    margin-bottom: 1rem;
+}
+
+/*****************************************/
+/* Menu 1, basado en display inline-block*/
+/*****************************************/
+
+
+
+nav.menu1  li{
+    /* Ponemos el menu en linea, no hay que poner width porque son del tamaño de la palabra*/
+    display: inline-block;
+    /* Cuestion de estetica poner barras para limitar la superficie de ataque*/
+    border-right: solid black;
+}
+
+nav.menu1 li:first-of-type{
+    border-left: solid black;
+}
+
+/*nav a{
+    /* Quito el color, con unset le digo que herede el color de su padre*/
+  /*   text-decoration: none;
+    color: unset;
+ 
+} */
+
+nav.menu1 a{
+    /* Al resetear el margen y el padding de ul hay que modificar y poner qu emuestren por block*/
+    display: block;
+     /* Incrementamos la superficie de ataque para poder clickar, el padding que empuja es el horizontal, puede ser 0rem 3 rem*/
+    padding: 1rem 3rem;
+ }
+
+
+
+/*************************/
+/* Menu2, basado en float*/
+/*************************/
+
+nav.menu2{
+    background-color: brown;
+    /* Como se colapsa no aparece el color brown, por lo que hay que poner el overflow*/
+    overflow: hidden;
+}
+
+/* Misma funcion para el colapso, sustituye al overflow*/
+/* nav.menu2 ul::after{
+    content: " ";
+    display: block;
+    clear: both;
+} */
+
+/* Con esto se centra la lista*/
+nav.menu2 ul{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav.menu2 li{
+    /* Como tengo 5, damos un 20% a cada uno*/
+    width: 20%;
+    /* Ahora si podemos poner el float-left*/
+    float: left;
+}
+
+nav.menu2 a{
+    /* Queremos que sean botones y por eso hay que ponerles block*/
+    display: block;
+    /* Incrementamos la superficie de ataque para poder clickar (arriba-abajo, izq-dcha)*/
+   padding: 1rem 1rem;
+   text-align: center;
+   border: solid gainsboro;
+   /* Como gestiono los espacios en blanco, para que cuando se hace pequeño no se baje abajo y joda la estructura*/
+   white-space: nowrap;
+}
+
+/* Con esto nos cambia el fondo de color cuando pasamos el puntero*/
+nav.menu2 a:hover {
+    padding: 1rem 1rem;
+    background-color: dimgray;
+}
+
