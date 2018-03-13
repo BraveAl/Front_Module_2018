@@ -1,0 +1,145 @@
+/* Selector de descendientes*/
+
+/* Importante poner esta parte al principio, el reseteo*/
+
+*, 
+*::before, *::after, 
+*:before, *:after { 
+box-sizing : border-box;
+}
+
+/* Distribucion elastica del container, para que pierda la elasticidad se pone un max-width:1080px y min-width: 480px por ejemplo*/
+.wrapper {
+    width: 90%;
+    max-width: 1080px;
+    min-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -2rem;
+    margin-bottom: 2rem; 
+    padding: 2rem 1rem;
+    background: linear-gradient(to right, rgba(158,183,219,1) 0%, rgba(133,162,207,1) 38%, rgba(113,145,197,1) 69%, rgba(93,128,187,1) 100%);
+    background-image: url("./images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+div.titulo{
+    text-align: center;
+    padding: 0.3rem;
+}
+
+.figufoto{
+    float: left;
+    width: 65%;
+    padding:0;
+    margin:0;
+    padding-right: .7rem;
+    text-align: center;
+}
+
+.figutitulo{
+    width: 60%;
+    padding:0;
+    margin:0;
+    padding-right: .7rem;
+}
+
+img{
+    width: 100%;
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-align: center;
+    font-family: 'Bangers', cursive; 
+ } 
+
+h4{
+    color: brown;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Open Sans Condensed', sans-serif;
+    
+    
+} 
+
+section.right{
+    width: 50%;
+    float: right;
+    padding: 1rem;
+}
+
+section.left{
+    width: 50%;
+    float: left;
+    padding: 1rem;
+}
+
+header {
+    padding: 2rem 1rem;
+}
+
+body {
+    font-family: 'Open Sans Condensed', sans-serif;
+   
+}
+
+h1 {
+   padding: .1rem;
+   
+}
+
+
+ h2,h4{
+    margin-top: 0;
+    color: brown;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Open Sans Condensed', sans-serif;
+    
+} 
+
+h3{
+    color: brown;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin-bottom: .1rem;
+}
+ 
+
+footer {
+    color: gray;
+    text-align: center;
+    clear: both;
+}
+
+.asidetab{
+    /* Movemos el aside a la derecha o a la izquierda*/
+    border: solid .1rem;
+    padding: .3rem .4rem;
+    width: 25%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: .4rem;
+    margin-top: -13rem;
+    float: right;
+    border-radius: 10px;
+    
+    
+}
+
+aside li{
+    font-size: .9rem;
+}
+
+p{
+    text-align: justify;
+}
+
+
+
+
