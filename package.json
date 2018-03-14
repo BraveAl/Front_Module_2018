@@ -1,0 +1,30 @@
+{
+  "name": "front_module_2018",
+  "version": "1.0.0",
+  "description": "Ejercicios del Curso",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BraveAl/Front_Module_2018.git"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "JS"
+  ],
+  "author": "Alberto Bravo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BraveAl/Front_Module_2018/issues"
+  },
+  "homepage": "https://github.com/BraveAl/Front_Module_2018#readme",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  }
+}

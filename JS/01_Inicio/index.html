@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejemplos de JavaScript</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+    
+</head>
+<body>
+    <header>
+        <h1>Ejemplos de JavaScript</h1>
+    </header>
+    <main>
+        <!-- Los on-* hace referencia a todos los eventos asociados a la etiqueta boton, cada vez que haga un click aparecera en cosola ese texto -->
+        <button type="button" onclick="console.log('Hola Aqui Estoy')">Saludar</button>
+    </main>
+    <footer>
+        Alberto Brave
+    </footer>
+    <script>
+            // Al ejecutar el alert se queda esperando a que se quite el alert (elemento bloqueante), si quiero que se vea se tiene que poner al final del body
+            //window.alert('Hola Mundo')
+            console.log('Hola mundooo')
+    </script>
+    <!-- Con module, le digo que ese fichero js puede llamar a otros ficheros js sin tener que repetir etiqueta -->
+    <script src="./js/app.js" type="module"></script>
+   <!--  <script src="./js/app2.js"></script> -->
+</body>
+</html>
