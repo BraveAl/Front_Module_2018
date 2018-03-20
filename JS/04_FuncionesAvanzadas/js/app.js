@@ -1,5 +1,5 @@
 // Declaracion de la funcion
-// Hiting de funciones: Primero lee las funciones declaras y luego las variables funciones
+// Hiting de funciones: Primero lee las funciones declaras y luego las variables funciones o funciones asigandas
 function mostrar (n)
 {
     console.log(`${n}`)

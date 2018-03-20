@@ -44,8 +44,17 @@ mostrarCalculo(n, function(){
 
 // Esperas un tiempo hasta ejecutar la funcion: Ejecuta lo que viene despues y pasado ese tiempo lanza la aplicacion
 // Se puede ejecutar el resto de la aplicacion y el CB se ejecutara transcurrido el tiempo definido
+// CB: FUNCION QUE PASAMOS COMO PARAMETRO
 setTimeout(function() {
     console.log(calcularCubo(n))
 }, 2000)
+
+// Una nueva funcion se crea como una variable. Se puede igualar una variable a una funcion
+let nuevaFuncion = mostrarCalculo
+let nuevaFuncion = mostrarCalculo() // Asi asigno el resultado
+
+/**********************************************************************************************************************************/
+
+
 
 
