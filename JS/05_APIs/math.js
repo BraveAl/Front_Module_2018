@@ -12,8 +12,9 @@ let aLetras = ['A', 'Ñ', 'O', 'K', 'H']
 
 aLetras.join('') // Devuelve un resultado pero no modifica la variable --> Inmutable
 aLetras.sort() // Modifica el valor original del array --> Mutable
+aLetras.reverse() // Da la vuelta al array (reordena) --> Mutable
 
-aLetrasOriginal = aLetras.slice(0, aLetras.length-1) // Hago una copia del array
+aLetrasOriginal = aLetras.slice(0, aLetras.length) // Hago una copia del array
 
 // Mutable
 let aNuevo = aLetras.splice(0,2) // Le quito el trozo desde 0-9 de aLetras y lo almaceno en aNuevo
