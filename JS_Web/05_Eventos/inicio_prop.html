@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eventos</title>
+</head>
+
+<body>
+    <header>
+        <h1>Eventos</h1>
+    </header>
+    <main>
+        <div class="form_group" id="btnGroup">
+            <button type="button" id='btnAceptar'>Aceptar</button>
+            <button type="button" id='btnCancelar'>Cancelar</button>
+        </div>
+ 
+    </main>
+    <script>
+        class App {
+
+            constructor(){
+
+                this.aMensajes = ["Aceptado", "Cancelado", "Pulsado Grupo"]
+                
+                // Listener o escuchador de eventos - DOM Level 2
+                document.querySelector('#btnAceptar').addEventListener('click', this.btnAceptar.bind(this), true) // Le digo que se quede con el this de donde esta escrita, no del this de quien te ejecuta. Con el bind(this)
+                document.querySelector('#btnCancelar').addEventListener('click', this.btnCancelar.bind(this), true)
+                document.querySelector('#btnGroup').addEventListener('click', this.btnGroup.bind(this), true) // Con true o false, cambias el orden de lectura, primero el grupo y luego el boton (true), al reves con (false)
+            }
+
+            // Para recoger el evento solo hay que ponerle como parametro en el metodo
+            btnAceptar(ev) {
+                //let s = "hola"
+                //alert() 
+                console.dir(this.aMensajes[0])
+            }
+
+            btnCancelar(ev) {
+                // Anular el comportamiento por defecto del disparador. 
+                //ev.preventDefault() // Sigue siendo un hiperenlace, pero al hacerle esto ya no te envia al hiperenlace
+                //let s = "hola, soy moderno"
+                //alert()
+                console.dir(this.aMensajes[1])
+            }
+
+             btnGroup(ev) {
+                
+                console.dir(this.aMensajes[2])
+            }
+
+
+        }
+        
+        let app = new App()
+
+    </script>
+</body>
+
+</html>

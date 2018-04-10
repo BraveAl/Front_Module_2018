@@ -1,0 +1,9 @@
+.respuesta {
+    display: none;
+    color: blue;
+}
+
+.pregunta:hover {
+    color: brown;
+}
+

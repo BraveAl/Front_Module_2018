@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eventos</title>
+</head>
+
+<body>
+    <header>
+        <h1>Eventos</h1>
+    </header>
+    <main>
+        <button type="button" id='btnPulsar'>Pulsar</button>
+        <button type="button" id='btnPulsarM'>Pulsar moderno</button>
+        <a id="aPulsarM" href="http://www.google.com">Pulsar moderno</a>
+
+    </main>
+    <script>
+        class App {
+
+            constructor(){
+
+                this.aMensajes = ["hola", "hola, soy moderno"]
+                // Handler de eventos - DOM Level 0
+                document.querySelector('#btnPulsar').onclick = this.btnPulsar.bind(this)// Le digo que se quede con el this de donde esta escrita, no del this de quien te ejecuta. Con el bind(this)
+
+                // Listener o escuchador de eventos - DOM Level 2
+                document.querySelector('#btnPulsarM').addEventListener('click', this.btnPulsarM.bind(this)) // Le digo que se quede con el this de donde esta escrita, no del this de quien te ejecuta. Con el bind(this)
+                document.querySelector('#aPulsarM').addEventListener('click', this.btnPulsarM.bind(this)) // Le digo que se quede con el this de donde esta escrita, no del this de quien te ejecuta. Con el bind(this)
+            }
+
+            // Para recoger el evento solo hay que ponerle como parametro en el metodo
+            btnPulsar(ev) {
+                //let s = "hola"
+                alert(this.aMensajes[0]) 
+                console.dir(ev)
+            }
+
+            btnPulsarM(ev) {
+                // Anular el comportamiento por defecto del disparador. 
+                ev.preventDefault() // Sigue siendo un hiperenlace, pero al hacerle esto ya no te envia al hiperenlace
+                //let s = "hola, soy moderno"
+                alert(this.aMensajes[1])
+                console.dir(ev.target)
+            }
+
+        }
+        
+        let app = new App()
+
+    </script>
+</body>
+
+</html>
