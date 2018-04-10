@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="form1.css">
+    <script src="./form_app_1.js" type="module"></script>
+    <!-- Le decimos que es un modulo para que lo entienda -->
+    <title>Formulario</title>
+    <style>
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Ejemplo de Formulario</h1>
+    </header>
+
+    <main>
+        <form action="" method="GET">
+            <!-- Es como un div para dividir un formulario en trozos -->
+            <fieldset>
+                <!-- Es cada uno de los trozos que tiene -->
+                <legend>Datos Personales</legend>
+                <div class="control-group">
+                    <label for="nombre">Escribe tu nombre</label>
+                    <!-- Es el tamaño maximo de los datos de entrada el maxlength, con focus indicas donde empezar, con required le indico que campos estan requeridos
+                    para que se pueda enviar -->
+                    <input type="text" name="nombre" id="nombre" maxlength="20" autofocus required>
+                </div>
+                <div class="control-group">
+                    <label for="apellido">Escribe tu apellido</label>
+                    <!-- Es un texto que aparece como fantasma, es un mensaje de informacion extra. Puede sustituir a una etiqueta -->
+                    <input type="text" name="apellido" id="apellido" placeholder="Escribe si puedes tus dos apellidos">
+                </div>
+                <div class="control-group">
+                    <label for="email">Escribe tu email</label>
+                    <!-- Es el tamaño maximo de los datos de entrada el maxlength, con focus indicas donde empezar -->
+                    <input type="email" name="email" id="email" maxlength="20" required>
+                </div>
+                <div class="control-group">
+                    <label for="password">Escribe tu password</label>
+                    <!-- Es un texto que aparece como fantasma, es un mensaje de informacion extra. Puede sustituir a una etiqueta. Con minleght introduzco la longitud
+                    minima de palabra -->
+                    <input type="password" name="password" id="password" required minlength="5">
+                </div>
+                <!--  <div class="control-group">
+                    <label for="curso">Escribe tu curso</label>
+                    <! Con value pongo un texto por defecto -->
+                <!--    <input type="text" name="curso" id="curso" value="Desarrollo Web">
+                </div> - -->
+            </fieldset>
+
+            <fieldset>
+                <legend>Datos Adicionales</legend>
+                <textarea name="datos" id="datos" cols="30" rows="10" placeholder="No escribas nada mas"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Conformidad</legend>
+                <div class="check-group">
+                    <input type="checkbox" name="isOk" id="isOk">
+                    <label for="isOk">Estoy de acuerdo con todo</label>
+                </div>
+                <div class="check-group">
+                    <input type="checkbox" name="notOk" id="notOk">
+                    <label for="notOk">No estoy de acuerdo con todo</label>
+                </div>
+            </fieldset>
+
+            <fieldset id="academic" class="ocultar">
+                <legend>Datos academidos</legend>
+                <div class="control-group">
+                    <label for="curso">Escribe tu curso</label>
+                    <!-- Con value pongo un texto por defecto -->
+                    <input type="text" name="curso" id="curso" value="Desarrollo Web">
+                </div>
+
+
+                <legend>Que turno quieres</legend>
+                <!-- Unico caso donde los names deben de ser el mismo, ya que solo debes poder elegir uno, debe tener value sino no se envia nada -->
+                <div class="radio-group">
+                    <input type="radio" name="turno" id="mañana" value="mañana">
+                    <label for="mañana">Mañana</label>
+                    <input type="radio" name="turno" id="tarde" value="tarde">
+                    <label for="tarde">Tarde</label>
+                    <input type="radio" name="turno" id="noche" value="noche">
+                    <label for="noche">Noche</label>
+                </div>
+                <div class="control-group">
+                    <!-- Aqui sale un desplegable con las opciones, siempre va con value. Cuando no hay value definito se toma el contenido de la etiquetas option -->
+                    <label for="selcurso">Selecciona un curso</label>
+                    <!-- Si introduces el atributo multiple, aparecen todas las opciones y las seleccionas con control -->
+                    <select name="selcurso" id="selcurso">
+                        <option value="front">Desarrollo Web</option>
+                        <option value="berberechos">Alicatador de berberechos</option>
+                        <option value="nubes">Pintador de nubes</option>
+                        <option value="espacios">Corredor de espacios</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <div class="control-group">
+                <button type="submit" id="btnEnviar">Enviar</button>
+                <!-- es como una variable que reside directamente en el dom -->
+                <!--  <input type="submit" value="Enviar"> -->
+
+                <button type="button" id="btnSaludar">Saludar</button>
+                <!--  <input type="button" value="Saludar"> -->
+                <button type="reset" id="btnReset">Reset</button>
+                <!--  <input type="reset" value=" Reset"> -->
+
+                <!-- <input type="hidden" name="state" value="0"> -->
+
+
+
+            </div>
+
+        </form>
+        <div id="resultados" class="resultados">
+
+        </div>
+    </main>
+</body>
+
+</html>

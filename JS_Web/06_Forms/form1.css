@@ -1,0 +1,22 @@
+.control-group{
+    padding: 0.4rem;
+}
+.control-group label{ 
+    /* POrque label es inline*/
+    display: inline-block;
+    width: 20%;
+    min-width: 10rem;
+}
+.control-group input{
+   
+    width: 40%;
+    min-width: 10rem;
+}
+
+/* input:focus{
+    border-color: brown;
+} */
+
+.ocultar {
+    display: none;
+}
