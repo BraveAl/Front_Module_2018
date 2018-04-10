@@ -10,7 +10,7 @@ class Acordeon
     }
     
     mostrar () {
-        this.oElemento.classList.toggle("respuesta")
+        this.oRespuesta.classList.toggle("respuesta")
         if (this.oElemento.className.indexOf("respuesta") >=0 ) {
            this.oEnlace.innerHTML = "Seguir leyendo";
         }
