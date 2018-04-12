@@ -1,0 +1,22 @@
+{
+  "posts": [
+    {
+      "id": 2,
+      "title": "Origen",
+      "author": "Alberto"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2,
+      "body": "Just another comment",
+      "postId": 2
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "identity": {
+    "identity": "Killer Frost"
+  }
+}
