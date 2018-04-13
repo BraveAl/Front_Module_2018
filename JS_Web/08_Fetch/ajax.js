@@ -150,6 +150,8 @@ function main() {
         let url = 'http://localhost:3000/posts' */
 
         ajax.open(metodo, url) // depende de la API que queramos consultar en el url
+        ajax.setRequestHeader('Content-Type', 'application/json')
+        ajax.setRequestHeader('Accept', 'application/json')
         ajax.send(data)
 
     }

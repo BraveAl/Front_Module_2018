@@ -1,9 +1,34 @@
 {
   "posts": [
     {
+      "title": "El laberinto azul",
+      "author": "Preston",
+      "id": 1
+    },
+    {
       "id": 2,
-      "title": "Origen",
+      "title": "Timeline",
       "author": "Alberto"
+    },
+    {
+      "id": 3,
+      "title": "El laberinto azul",
+      "author": "Alberto"
+    },
+    {
+      "id": 4,
+      "title": "Mithril",
+      "author": "Alberto"
+    },
+    {
+      "id": 6,
+      "title": "El nombre del viento",
+      "author": "Alberto"
+    },
+    {
+      "title": "La vida de Brian",
+      "author": "Preston",
+      "id": 7
     }
   ],
   "comments": [

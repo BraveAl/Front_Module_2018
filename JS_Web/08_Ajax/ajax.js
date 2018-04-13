@@ -85,7 +85,7 @@ function main() {
 
     function postDatos () {
         let data = {
-            title: "El laberinto azul",
+            title: "La vida de Brian",
             author: "Preston"
         }
         let metodo = 'POST'
@@ -102,7 +102,7 @@ function main() {
             title: "El laberinto azul",
             author: "Preston"
         }
-        let item = document.querySelector('#item').value
+        let item = document.querySelector('#itemU').value
         if(item)
             {
                 url = 'http://localhost:3000/posts/'+item
@@ -150,6 +150,8 @@ function main() {
         let url = 'http://localhost:3000/posts' */
 
         ajax.open(metodo, url) // depende de la API que queramos consultar en el url
+        ajax.setRequestHeader('Content-Type', 'application/json') // Poner cabeceras para que el servidor lo procese
+        ajax.setRequestHeader('Accept', 'application/json') // Poner cabeceras para que el servidor lo procese
         ajax.send(data)
 
     }
