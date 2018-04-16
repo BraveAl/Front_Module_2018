@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./css/form.css">
+    <script src="./js/form_app.js" type="module"></script>
+</head>
+
+<body>
+    <header>
+        <h1>formulario</h1>
+    </header>
+    <main>
+        <form action="" method="GET" id='form1'>
+            <fieldset>
+                    <legend>Datos del Alumno</legend>
+                <div class="izq">
+
+                    
+                    <fieldset>
+                        <legend>Identificacion</legend>
+
+
+                        <div class="control-group">
+                            <label for="email">Cuenta de correo</label>
+                            <input type="email" name="email" id="email" required placeholder="Escribe tus correo" required>
+                        </div>
+                        <div class="control-group">
+                            <label for="passwd">Introduce si clave</label>
+                            <input type="password" name="passwd" id="passwd" placeholder="Escribe tus contraseña" required>
+                        </div>
+                        <div class="control-group">
+                            <label for="passwdR">Introduce la clave nuevamente</label>
+                            <input type="password" name="passwdR" id="passwdR" placeholder="Escribe tus contraseña" required>
+                        </div>
+                    </fieldset>
+                    <fieldset id="acedemic" class="ocultar">
+                        <legend>curso</legend>
+                        
+                        <div class="control-group">
+                            <label for="curso">Selecciona un curso</label>
+                            <select name="curso" id="curso">
+                                <option value=""></option>
+                                <option value="front">Desarrollo Front</option>
+                                <option value="web">Diseño Web</option>
+                                <option value="node">Servidores</option>
+                                <option value="sql">Bases de Datos</option>
+                            </select>
+                        </div>
+                        <div id="div_topics" class="control-group ocultar">
+                            <label for="curso">Selecciona tres asignuras</label>
+                            <select name="topics" id="topics" multiple></select>
+                        </div>
+                    </fieldset>
+
+                    <div class="control-group">
+                            
+                            <button type="submit" id="btnEnviar">Enviar</button>
+                            <!-- <input type="submit" value="Enviar"> -->
+                            <button type="reset" id="btnBorrar">Borrar</button>
+                           
+                        </div>
+                </div>
+
+                <div class="dcha">
+                    <fieldset>
+                        <legend>Datos Personales</legend>
+                        <div class="control-group">
+                            <label for="nombre">Escribe tu nombre</label>
+                            <input type="text" name="nombre" id="nombre" maxlength="20" required minlength="2" autofocus required>
+                        </div>
+                        <div class="control-group">
+                            <label for="apellido">Escribe tu apellido</label>
+                            <input type="text" name="apellido" id="apellido" placeholder="Escribe tus apellidos" required>
+                        </div>
+
+                        <fieldset>
+                            <div id="div_fecha" class="control-group">
+                                <label for="fecha">Fecha de nacimiento</label>
+                                <input type="date" name="fecha" id="fecha">
+                            </div>
+
+                        </fieldset>
+
+
+                    </fieldset>
+                    <fieldset>
+                        <legend>Aficciones</legend>
+                        <div class="check-group">
+                            <input type="checkbox" name="volar" id="volar">
+                            <label for="volar"> Volar</label>
+                        </div>
+                        <div class="check-group">
+                            <input type="checkbox" name="correr" id="correr">
+                            <label for="correr">Correr</label>
+                        </div>
+
+                    </fieldset>
+                    <fieldset >
+                        <p class="tiempo" id="tiempo"></p>
+
+                    </fieldset>
+                    <div id="resultados">
+
+                    </div>
+
+
+                </div>
+
+
+
+
+
+            </fieldset>
+
+        </form>
+        
+    </main>
+</body>
+
+</html>
