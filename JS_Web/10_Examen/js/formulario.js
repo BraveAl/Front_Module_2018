@@ -46,6 +46,8 @@ export class Formulario {
         //this.domBtnReset.addEventListener('click', this.reset.bind(this))
         
         this.domSelectCurso.addEventListener('change', this.presentarAsignaturas.bind(this))
+
+        // Para radioButton el evento es 'checked'
     }
 
     /*   saludar() {
@@ -109,6 +111,8 @@ export class Formulario {
          })
          return value 
      } */
+
+     
 
     procesarSelect(nodo) {
         let index = nodo.selectedIndex
