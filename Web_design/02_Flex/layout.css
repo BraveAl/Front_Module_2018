@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+}
+
+.header, .footer {
+    min-height: 6rem;
+    background-color: brown;
+    color: peachpuff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    display: flex;
+}
+
+.lado {
+    padding: 3rem;
+    border: solid 1px;
+}
+
+.lat_izda {
+    width: 10%; /* Se pone como punto de partida*/
+    order: 2; /* Con esto indico el orden de los div hijos con el Flex*/
+    flex-grow: 2; /* Ancho que quiero cuando hay espacio disponible extra, solo tiene sentido en conjunto con otro elemento. Si sobra espacio, al tener el mismo indice de cre
+                    cimiento se lo repartan por igual*/
+    flex-shrink: 1; /* COmo se comportan cuando se comprimen*/
+    flex-basis: 3; /* Cuando no hacen nada de lo anterior, equivale a los porcentajes. Si uno tiene un 3, el otro un 1. Se suele dejar en auto */
+    
+}
+
+.lat_dcha {
+    width: 10%;
+    order: 1;
+    flex-grow: 1; 
+    flex-shrink: 1;
+    flex-basis: 1;
+    
+}

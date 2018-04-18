@@ -1,0 +1,22 @@
+main {
+    background-color: royalblue;
+    /* height: 15rem; */
+    display: flex;
+    /* justify-content: space-between; */ /* para hacer menus*/
+    align-items: stretch; /* TOdas las columnas tienen la anchura de la columna mas grande. Con center se centra perfecto en cualquier vertical*/
+    /* flex-wrap: wrap; --> No sobrepasa el contenedor y tambien podemos utilizar conjuntamente la propiedad align-content*/
+    /* flex-direction: column; --> Haces que se comporten en columna*/ 
+    /* Si tocas los ejes toda la estructura va referida a esos ejes*/
+}
+
+div {
+    font-size: 6rem;
+    padding: 1rem;
+    background-color: orange;
+    border: 1px solid seashell;
+   
+}
+
+div:nth-of-type(3) {
+    font-size: 8rem;
+}
