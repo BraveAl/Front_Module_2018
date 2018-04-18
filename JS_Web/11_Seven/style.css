@@ -1,0 +1,86 @@
+* { box-sizing: content-box}
+
+main{
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: rgb(245, 245, 245);
+}
+
+legend{
+    background: rgb(255, 209, 4);
+    border: 1px;
+    padding: 0.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem
+  
+}
+
+.floatL{
+    width: 43%;
+    float: left;
+    clear: both;
+    padding-right: 4rem;
+    padding-left: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem
+}
+
+.floatR{
+    width: 43%;
+    float: right;
+    clear: both;
+    padding-right: 4rem;
+    padding-left: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.control-group label{
+    display: inline-block;
+    width: 20%;
+    min-width: 10rem;
+}
+
+.control-group {
+    padding: 1.5rem;
+    margin-block-start: 2rem
+}
+
+.control-group input {
+    width: 40%;
+    min-width: 10rem;
+}
+
+
+input:focus{
+    border-color: rgb(255, 209, 4)
+}
+
+
+fieldset {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+}
+
+button{
+    margin: 0.5rem;
+    background-color: rgb(255, 209, 4);
+    padding: 0.5rem
+}
+
+div.afi{
+   margin-bottom: 1.5rem
+}
+
+.radio-group{
+    padding-bottom: 1.5rem
+}
+
+.cuerpo{
+    margin-left: 3rem;
+    margin-right: 3rem;
+
+}

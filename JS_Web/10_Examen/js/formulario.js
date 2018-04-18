@@ -47,7 +47,8 @@ export class Formulario {
         
         this.domSelectCurso.addEventListener('change', this.presentarAsignaturas.bind(this))
 
-        // Para radioButton el evento es 'checked'
+        // Para radioButton el evento es 'change' cuando se selecciona un elemento
+        // Habria que hacer un forEach para asignar a cada boton un listener
     }
 
     /*   saludar() {

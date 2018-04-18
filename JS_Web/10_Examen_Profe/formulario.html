@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio obligatorio JS-Formulario</title>
+    <link rel="stylesheet" href="./formulario.css">
+    <script src="./form_app.js" type="module"></script>
+
+</head>
+
+<body>
+    <header>
+        <h1>Datos del alumno</h1>
+    </header>
+    <main>
+        <form action="" method="GET" id='form'>
+            <fieldset>
+                <legend>Identificación</legend>
+                <div class="control-group">
+                    <label for="email">Cuenta de correo</label>
+                    <input type="email" name="email" id="email" requiredz placeholder="cuenta@dominio.com">
+                </div>
+                <div class="control-group">
+                    <label for="passwd">Introduzca su clave de acceso</label>
+                    <input type="password" name="passwd" id="passwd" requiredz>
+                </div>
+                <div class="control-group">
+                    <label for="rptpasswd">Repita su clave de acceso</label>
+                    <input type="password" name="rptpasswd" id="rptpasswd" requiredz>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Selecciona un Curso</legend>
+                <div>
+                    <input type="radio" id="front" name="curso" value="Programador Web">
+                    <label for="front">Programador Web</label>
+                    <input type="radio" id="sistem" name="curso" value="Programador de Sistemas">
+                    <label for="sistem">Programador de Sistemas</label>
+                    <input type="radio" id="objects" name="curso" value="Programador de Objetos">
+                    <label for="objects">Programador de Objetos</label>
+                </div>
+                <div id="div_topics" class="control-group mostrar">
+                    <label for="curso"></label>
+                    <select name="topics" id="topics"></select>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <div class="control-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" maxlength="20" requiredz minlength="2" autofocus>
+                </div>
+                <div class="control-group">
+                    <label for="apellido">Primer Apellido</label>
+                    <input type="text" name="apellido" id="apellido" placeholder="" requiredz>
+                </div>
+                <div class="control-group">
+                    <label for="apellido2">Segundo Apellido</label>
+                    <input type="text" name="apellido2" id="apellido2" placeholder="" requiredz>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Fecha de nacimiento</legend>
+                <div id="div_nacim" class="control-group">
+                    <label for="fecha">Fecha de nacimiento</label>
+                    <input type="date" name="fecha" id="fecha">
+                </div>
+            </fieldset>
+            <fieldset>
+                <Legend>Aficiones</Legend>
+                <div id="div_aficiones">
+                    <div class="radio-group">
+                        <input type="checkbox" name="Música" id="Música" value="Música" checked>
+                        <label for="Música">Música</label>
+                        <input type="checkbox" name="Viajar" id="Viajar" value="Viajar">
+                        <label for="Viajar">Viajar</label>
+                        <input type="checkbox" name="Pintura" id="Pintura" value="Pintura">
+                        <label for="Pintura">Pintura</label>
+                        <input type="checkbox" name="Fotografía" id="Fotografía" value="Fotografía">
+                        <label for="Fotografía">Fotografía</label>
+                        <input type="checkbox" name="Cine" id="Cine" value="Cine">
+                        <label for="Cine">Cine</label>
+                        <input type="checkbox" name="Lectura" id="Lectura" value="Lectura">
+                        <label for="Lectura">Lectura</label>
+                        <input type="checkbox" name="Deporte" id="Deporte" value="Deporte">
+                        <label for="Deporte">Deporte</label>
+                        <input type="checkbox" name="Baile" id="Baile" value="Baile">
+                        <label for="Baile">Baile</label>
+
+            </fieldset>
+
+            <fieldset>
+                <legend></legend>
+                <div id="div_fecha" class="control-group">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="control-group">
+                    <button type="submit" id="btnEnviar">Enviar datos</button>
+                    <button type="reset" id="btnBorrar">Reestablecer valores</button>
+                </div>
+            </fieldset>
+
+        </form>
+        <div class="resultados">
+            <ul id="resultados"></ul>
+        </div>
+    </main>
+</body>
+<footer>
+    <address>Pilar Consuegra - Tajamar 2018</address>
+
+</html>
